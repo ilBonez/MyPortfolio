@@ -1,0 +1,20 @@
+[project]
+name = "myportfolio-content"
+version = "1.0.0"
+description = "Validates the portfolio content and compiles it for the Vue site"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.9",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+build-content = "build_content:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["tools/build_content.py"]
+sources = ["tools"]

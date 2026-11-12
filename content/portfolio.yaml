@@ -1,0 +1,207 @@
+# Single source of truth for the site. Every text field is bilingual: {it, en}.
+# Validated and compiled to site/src/data/portfolio.json by `uv run build-content`.
+
+profile:
+  name: Lorenzo Bonetti
+  title:
+    it: AI Product Owner · Senior Product Engineer
+    en: AI Product Owner · Senior Product Engineer
+  location:
+    it: Verona, Italia
+    en: Verona, Italy
+  summary:
+    it: >-
+      Product Owner tecnico di una piattaforma di Generative AI in produzione per assicurazioni e banche.
+      Seguo DoxaSuite dal 2023, prima come architetto e oggi come responsabile di backlog, roadmap e rilasci.
+      Traduco requisiti di business e normativi in user story, ne decido le priorità con business, CTO e clienti
+      e ne misuro il risultato su qualità dei dati e costo dell'AI.
+    en: >-
+      Technical Product Owner of a Generative AI platform running in production for insurers and banks.
+      I have led DoxaSuite since 2023, first as its architect and now as owner of its backlog, roadmap and releases.
+      I turn business and regulatory requirements into user stories, prioritise them with business, CTO and clients,
+      and measure the outcome on data quality and AI cost.
+  email: lorenzoo.bonetti@gmail.com
+  linkedin: https://www.linkedin.com/in/lorenzobonetti
+  github: https://github.com/ilBonez
+  cv: CV_Lorenzo_Bonetti.pdf
+
+highlights:
+  - value: "67,5%"
+    label:
+      it: ri-estrazioni evitate riconoscendo i documenti già elaborati
+      en: of re-extractions avoided by recognising already-processed documents
+  - value: "88%"
+    label:
+      it: degli errori ricondotti a specifiche e regole, non al modello AI
+      en: of errors traced to specs and rules, not to the AI model
+  - value: "-39%"
+    label:
+      it: costo AI per documento su un cliente bancario, a qualità invariata
+      en: AI cost per document for a banking client, same quality
+  - value: "ECAI 2025"
+    label:
+      it: paper su un assistente multi-agente per la finanza
+      en: paper on a multi-agent assistant for finance
+
+experience:
+  - company: Fairmat
+    role:
+      it: Senior Product Engineer · Product Owner DoxaSuite
+      en: Senior Product Engineer · Product Owner DoxaSuite
+    location: Verona
+    start: 2025-08
+    end: null
+    bullets:
+      - it: Backlog e roadmap di DoxaSuite in Jira (user story, criteri di accettazione, story point, epiche), sprint Scrum e rilasci su sviluppo, test e produzione.
+        en: DoxaSuite backlog and roadmap in Jira (user stories, acceptance criteria, story points, epics), Scrum sprints and releases across dev, test and production.
+      - it: Estensione della piattaforma dai KID PRIIPs vita ai certificati e al non-vita (DIP e CGA danni, per ramo).
+        en: Extended the platform from life KID PRIIPs to structured certificates and non-life products (DIP and P&C policy terms, per line of business).
+      - it: Registro di configurazione versionato con editor per gli analisti, che modificano prompt e regole di validazione per cliente senza un nuovo rilascio.
+        en: Versioned configuration registry with an editor that lets analysts change prompts and validation rules per client without a software release.
+      - it: Misure di accuratezza in produzione con attribuzione delle cause; backlog riprioritizzato sulle regole invece di cambiare modello.
+        en: Production accuracy measurement with root-cause attribution; the backlog was reprioritised on rules instead of switching model.
+      - it: Valutazione dei nuovi modelli Gemini su costo, latenza e accuratezza prima dell'adozione.
+        en: Evaluation of new Gemini models on cost, latency and accuracy before adoption.
+      - it: Delivery AI-native con agenti di sviluppo (Claude Code) guidati da specifiche, review e quality gate. Formazione interna su Prompt Engineering, RAG e MCP.
+        en: AI-native delivery with coding agents (Claude Code) driven by specs, reviews and quality gates. Internal training on Prompt Engineering, RAG and MCP.
+  - company: Fairmat
+    role:
+      it: AI Engineer
+      en: AI Engineer
+    location: Verona
+    start: 2023-10
+    end: 2025-08
+    bullets:
+      - it: Progettazione di DoxaSuite, piattaforma a microservizi (Python/FastAPI, code su PostgreSQL) per estrarre testi, tabelle e indicatori da documenti finanziari.
+        en: Designed DoxaSuite, a microservice platform (Python/FastAPI, PostgreSQL queues) that extracts text, tables and indicators from financial documents.
+      - it: Clienti tra cui OpenKIDVita (Allianz, Sara Vita, Intesa Sanpaolo Assicurazioni), Banca Iccrea, Banca Generali e Websim.
+        en: Clients including OpenKIDVita (Allianz, Sara Vita, Intesa Sanpaolo Assicurazioni), Banca Iccrea, Banca Generali and Websim.
+      - it: Datachat, assistente multi-agente (RAG + Text-to-SQL) integrato in Product Dashboard e OpenKIDVita, pubblicato a ECAI 2025.
+        en: Datachat, a multi-agent assistant (RAG + Text-to-SQL) integrated into Product Dashboard and OpenKIDVita, published at ECAI 2025.
+  - company: Fairmat
+    role:
+      it: Machine Learning Engineer
+      en: Machine Learning Engineer
+    location: Verona
+    start: 2022-07
+    end: 2023-10
+    bullets:
+      - it: Framework per le Gestioni Separate (PRIIPs Categoria IV) tramite meta-modeling di simulatori ALM.
+        en: Framework for Italian segregated funds (PRIIPs Category IV) based on meta-modelling of ALM simulators.
+      - it: Primo sistema di estrazione dati da KID (Transformers QA) e pipeline di validazione su Label Studio.
+        en: First KID data extraction system (Transformers QA) and a Label Studio validation pipeline.
+  - company: SIAV
+    role:
+      it: Research Engineer
+      en: Research Engineer
+    location: Rubano (PD)
+    start: 2021-02
+    end: 2022-07
+    bullets:
+      - it: R&D sulla gestione documentale (Process Mining, Computer Vision, blockchain) e studi di fattibilità con il commerciale.
+        en: Document management R&D (Process Mining, Computer Vision, blockchain) and feasibility studies with the sales team.
+
+projects:
+  - title: DoxaSuite
+    tag:
+      it: Prodotto · in produzione
+      en: Product · in production
+    description:
+      it: Piattaforma che estrae e valida dati regolamentari da KID, Termsheet, DIP e CGA per compagnie assicurative e banche, con regole di validazione e configurazione per cliente.
+      en: Platform that extracts and validates regulatory data from KIDs, termsheets and insurance policy documents for insurers and banks, with per-client validation rules and configuration.
+    tech: [Gemini, FastAPI, PostgreSQL, Microservices, Agentic delivery]
+  - title: Datachat
+    tag:
+      it: Ricerca · ECAI 2025
+      en: Research · ECAI 2025
+    description:
+      it: Assistente multi-agente che scompone domande complesse e combina RAG su Milvus con agenti Text-to-SQL per ridurre le allucinazioni.
+      en: Multi-agent assistant that breaks down complex questions and combines RAG on Milvus with Text-to-SQL agents to reduce hallucinations.
+    tech: [Multi-agent, RAG, Milvus, Text-to-SQL]
+    url: https://www.researchgate.net/publication/396931129_Datachat_a_multi-agent_assistant_for_domain_specific_tasks
+  - title: MyPortfolio
+    tag:
+      it: Questo sito
+      en: This site
+    description:
+      it: Sito statico in Vue, contenuti in un unico YAML validato da uno script Python gestito con uv, pubblicato da GitHub Actions su GitHub Pages.
+      en: Static Vue site whose content lives in one YAML file, validated by a uv-managed Python script and published by GitHub Actions to GitHub Pages.
+    tech: [Vue, Vite, uv, Pydantic, GitHub Actions]
+    url: https://github.com/ilBonez/MyPortfolio
+
+academic:
+  - year: 2020
+    it: Tesi magistrale, previsione dei trend nella moda dall'analisi di immagini (Deep Learning, LSTM)
+    en: Master's thesis, fashion trend forecasting from image analysis (Deep Learning, LSTM)
+  - year: 2020
+    it: Segmentazione di masse tumorali da risonanza magnetica (U-Net)
+    en: Brain tumour segmentation from MRI scans (U-Net)
+  - year: 2020
+    it: App di realtà aumentata per i beni culturali
+    en: Augmented reality app for cultural heritage
+  - year: 2019
+    it: Previsione del carico di una rete di pompe di calore con reti LSTM
+    en: Heat pump network load forecasting with LSTM networks
+  - year: 2018
+    it: Tesi triennale, ambiente virtuale interattivo con modelli 3D di monumenti
+    en: Bachelor's thesis, interactive virtual environment with 3D monument models
+
+skills:
+  - group:
+      it: Product & Delivery
+      en: Product & Delivery
+    items: [Product Ownership, Roadmap, Backlog, User story, Agile/Scrum, Jira, Stakeholder management, Release management, KPI]
+  - group:
+      it: AI & LLM
+      en: AI & LLM
+    items: [Generative AI, Agentic systems, RAG, Prompt Engineering, MCP, Gemini / Vertex AI, OpenAI API, LangChain, Claude Code]
+  - group:
+      it: Dominio
+      en: Domain
+    items: [PRIIPs, KID, IBIP, Certificates, Non-life insurance]
+  - group:
+      it: Tecnologie
+      en: Technology
+    items: [Python, FastAPI, Microservices, PostgreSQL, Docker, Kubernetes, CI/CD, OpenTelemetry]
+
+publications:
+  - venue: ECAI 2025, Bologna
+    title: "Datachat: a multi-agent assistant for domain specific tasks"
+    authors: S. Pagliarini, L. Bonetti, M. Colognesi, F. Tesser
+    url: https://www.researchgate.net/publication/396931129_Datachat_a_multi-agent_assistant_for_domain_specific_tasks
+
+education:
+  - degree:
+      it: Laurea Magistrale in Ingegneria e Scienze Informatiche
+      en: MSc in Computer Science and Engineering
+    school:
+      it: Università di Verona
+      en: University of Verona
+    years: 2018 – 2020
+    grade:
+      it: 110/110 con lode
+      en: 110/110 cum laude
+  - degree:
+      it: Laurea Triennale in Informatica
+      en: BSc in Computer Science
+    school:
+      it: Università di Verona
+      en: University of Verona
+    years: 2015 – 2018
+    grade:
+      it: 100/110
+      en: 100/110
+
+languages:
+  - name:
+      it: Italiano
+      en: Italian
+    level:
+      it: Madrelingua
+      en: Native
+  - name:
+      it: Inglese
+      en: English
+    level:
+      it: B2 professionale
+      en: B2, professional

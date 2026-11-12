@@ -1,0 +1,19 @@
+{
+  "name": "myportfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "content": "cd .. && uv run build-content",
+    "dev": "npm run content && vite",
+    "build": "npm run content && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.11",
+    "vite": "^8.3.8"
+  }
+}
